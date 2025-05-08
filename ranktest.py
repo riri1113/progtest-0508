@@ -19,7 +19,7 @@ if len(DUMMY_NAMES) < NUM_STUDENTS:
 students = []
 for i in range(NUM_STUDENTS):
     student_name = DUMMY_NAMES[i] # リストから名前を取得
-    scores = {subject: random.randint(60, 100) for subject in SUBJECTS} # 各教科0点から100点のランダムな点数
+    scores = {subject: random.randint(60, 100) for subject in SUBJECTS} # 各教科60点から100点のランダムな点数
     student_data = {"名前": student_name}
     student_data.update(scores)
     students.append(student_data)
